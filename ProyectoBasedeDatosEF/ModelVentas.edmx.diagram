@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b796e55939314363aaaf91f1e6ae7ab4" Name="Diagram1">
+        <EntityTypeShape EntityType="VentasIDATModel.Productos" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VentasIDATModel.Categorias" Width="1.5" PointX="3.75" PointY="0.875" />
+        <EntityTypeShape EntityType="VentasIDATModel.Proveedores" Width="1.5" PointX="3.25" PointY="3.125" />
+        <AssociationConnector Association="VentasIDATModel.FK_Productos_Categorias" />
+        <AssociationConnector Association="VentasIDATModel.FK_Productos_Proveedores" />
+        <EntityTypeShape EntityType="VentasIDATModel.Pedidos" Width="2.25" PointX="8.25" PointY="3.375" />
+        <EntityTypeShape EntityType="VentasIDATModel.Detalles_de_pedidos" Width="2.25" PointX="7.5" PointY="0.5" />
+        <AssociationConnector Association="VentasIDATModel.FK_Detalles_de_pedidos_Pedidos" />
+        <AssociationConnector Association="VentasIDATModel.FK_Detalles_de_pedidos_Productos" />
+        <EntityTypeShape EntityType="VentasIDATModel.Clientes" Width="1.5" PointX="5.5" PointY="3.125" />
+        <AssociationConnector Association="VentasIDATModel.FK_Pedidos_Clientes" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
